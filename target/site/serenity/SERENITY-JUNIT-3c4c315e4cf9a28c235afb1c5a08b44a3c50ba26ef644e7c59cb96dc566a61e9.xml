@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="4" name="As a user I would like to check the CRUD functionality of reqres.in" skipped="0" tests="6" time="7.76" timestamp="2022-06-21T15:13:13.696+01:00[Europe/London]"><testcase name="I want to create a user to the application"/><testcase name="I want to read the newly created user from the application"><failure message="&#10;Expected: map containing [ANYTHING-&gt;&quot;Bob12795&quot;]&#10;     but: map was []" type="java.lang.AssertionError">
+Expected: map containing [ANYTHING-&gt;"Bob12795"]
+     but: map was []</failure><system-err>
+Expected: map containing [ANYTHING-&gt;"Bob12795"]
+     but: map was []&#13;
+in.reqres.cucumber.steps.MyStepdefs.iSendGETRequestToTheApplicationToReadNewlyCreatedUser(MyStepdefs.java:57)&#13;
+✽.When I send GET request to the application to read newly created user(UsersCRUDtest.feature:12)&#13;
+</system-err></testcase><testcase name="I want to update the newly created user using PUT from the application"><failure message="&#10;Expected: map containing [ANYTHING-&gt;&quot;Bob12795_updatedbyPut&quot;]&#10;     but: map was []" type="java.lang.AssertionError">
+Expected: map containing [ANYTHING-&gt;"Bob12795_updatedbyPut"]
+     but: map was []</failure><system-err>
+Expected: map containing [ANYTHING-&gt;"Bob12795_updatedbyPut"]
+     but: map was []&#13;
+in.reqres.cucumber.steps.MyStepdefs.iVerifyInTheResponseIfItHasNewlyCreatedUserIsUpdated(MyStepdefs.java:77)&#13;
+✽.And I verify in the response if it has newly created user is updated(UsersCRUDtest.feature:20)&#13;
+</system-err></testcase><testcase name="I want to update the newly created user using PATCH from the application"><failure message="&#10;Expected: map containing [ANYTHING-&gt;&quot;Bob12795_updatedbyPut_updatedbyPatch&quot;]&#10;     but: map was []" type="java.lang.AssertionError">
+Expected: map containing [ANYTHING-&gt;"Bob12795_updatedbyPut_updatedbyPatch"]
+     but: map was []</failure><system-err>
+Expected: map containing [ANYTHING-&gt;"Bob12795_updatedbyPut_updatedbyPatch"]
+     but: map was []&#13;
+in.reqres.cucumber.steps.MyStepdefs.iVerifyInTheResponseIfItHasNewlyCreatedUserIsUpdated(MyStepdefs.java:77)&#13;
+✽.And I verify in the response if it has newly created user is updated(UsersCRUDtest.feature:26)&#13;
+</system-err></testcase><testcase name="I want to delete the newly created user from the application"><failure message="1 expectation failed.&#10;Expected status code &lt;404&gt; but was &lt;204&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+in.reqres.cucumber.steps.MyStepdefs.iVerifyIfNewlyCreatedUserIsDeleted(MyStepdefs.java:96)&#13;
+✽.And I verify if newly created user is deleted(UsersCRUDtest.feature:32)&#13;
+</system-err></testcase><testcase name="I want to read all users from the application and verify some items from response"/></testsuite>
